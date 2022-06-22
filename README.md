@@ -1,9 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# alwaysAI Assessment
 
-## Getting Started
+## Design Implementation
 
-First, run the development server:
+```
+Given this interactive mockup, create the pricing page: https://www.figma.com/proto/kdaqZFLKKCK4qwhWwusm0d/aai-pricing?node-id=40%3A1962&starting-point-node-id=40%3A1962 
+Use Next.js, React, and any other packages/frameworks that help you build a pleasing interface. 
+Feel free to draw inspiration from the alwaysai.co pages, (i.e., use what you have available to you). 
+Your work should be delivered via a git repo and steps to run, lint, deploy, etc. should be NPM scripts and outlined in the README.md. 
+We should be able to clone and run your app locally to review and debug your code.
+```
 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It is data driven from `./constants/data.ts`.
+
+### Requirements
+```
+yarn/npm
+node
+```
+### Getting Started
+
+After clone run:
+```bash
+npm i
+# or
+yarn 
+```
+
+Then run the development server:
 ```bash
 npm run dev
 # or
@@ -12,23 +35,22 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Other commands:
+```bash
+yarn build
+yarn start
+yarn lint
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Hosted on Vercel
+Check out the deployed version on Vercel:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Data Modal Design
 
-## Learn More
+```
+Design a relational data model (using the ERD tool of your choice) to represent the following scenario:  An alwaysAI user is the owner of one team but can be a member on an unlimited number of other teams. Each team can have an unlimited number of projects. A project consists of devices, models, apps, and collaborators and to be a collaborator on a project you must be a member of the team. Devices can belong to a project, but all devices belong to a user.
+Include some logical column names in each table (make some up if you're unsure what belongs in a table), most importantly include the columns you need to support the relationships described.
+Include this ERD as an image file in the repo with the rest of your project from task #1.
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Take a look at the `alwaysAI ER diagram (crow's foot).jpeg` to review the data model.

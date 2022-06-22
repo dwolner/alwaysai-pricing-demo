@@ -7,12 +7,12 @@ import { siteLinks, pricingData, featureTableData, socialLinks } from '../consta
 
 const Home: NextPage = () => {
   return (
-    <div className={''}>
+    <main>
       <Nav siteLinks={siteLinks} />
       <Tiers pricingData={pricingData} />
       <Features featureTableData={featureTableData} />
       <Footer siteLinks={siteLinks} socialLinks={socialLinks} />
-    </div>
+    </main>
   )
 }
 

@@ -6,7 +6,7 @@ import SocialLink from './SocialLink'
 import type { NextComponentType, NextPageContext } from 'next'
 interface Link {
     text?: string
-    link?: string
+    link?: any
     icon?: string
     backgroundColor?: string
     subLinks?: Link[]
