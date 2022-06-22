@@ -1,18 +1,16 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Nav from '../components/Nav'
+import Tiers from '../components/Tiers'
+import Features from '../components/Features'
 import Footer from '../components/Footer'
-import { siteLinks, socialLinks } from '../constants/data'
+import { siteLinks, pricingData, featureTableData, socialLinks } from '../constants/data'
 
 const Home: NextPage = () => {
   return (
     <div className={''}>
       <Nav siteLinks={siteLinks} />
-
-      <main className={''}>
-
-      </main>
-
+      <Tiers pricingData={pricingData} />
+      <Features featureTableData={featureTableData} />
       <Footer siteLinks={siteLinks} socialLinks={socialLinks} />
     </div>
   )

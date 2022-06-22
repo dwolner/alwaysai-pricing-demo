@@ -11,7 +11,6 @@ interface Link {
 }
 interface Props {
     siteLinks: Link[]
-    socialLinks: Link[]
 }
 
 const Nav: NextComponentType<NextPageContext, {}, Props> = (
@@ -19,11 +18,11 @@ const Nav: NextComponentType<NextPageContext, {}, Props> = (
 ) => {
     return (
         <div className='w-full p-2 bg-white shadow'>
-            <div className='flex flex-wrap max-w-8xl mx-auto justify-between items-center'>
-                <div className='flex'>
+            <div className='flex max-w-8xl mx-auto justify-between items-center'>
+                <div className='flex xl:flex-1'>
                     <Image src='/img/aai-logo-black-text.svg' layout='intrinsic' width={150} height={75} alt='alwaysAI Logo' />
                 </div>
-                <div className='flex grow justify-center'>
+                <div className='hidden md:flex xl:flex-1 justify-center'>
                     {props.siteLinks.map(item => {
                         return (
                             <div key={item.link} className='px-6 text-sm'>
@@ -34,11 +33,11 @@ const Nav: NextComponentType<NextPageContext, {}, Props> = (
                         )
                     })}
                 </div>
-                <div className='flex'>
-                    <button className='bg-white px-4 py-2.5 mx-1 rounded-lg text-red border-2 border-red text-sm'>
+                <div className='flex xl:flex-1 justify-end'>
+                    <button className='bg-white md:px-4 p-2.5 mx-1 rounded-lg text-red border-2 border-red text-xs md:text-sm'>
                         Schedule a Demo
                     </button>
-                    <button className='bg-red px-4 py-2.5 mx-1 rounded-lg text-white text-sm'>
+                    <button className='bg-red md:px-4 p-2.5 mx-1 rounded-lg text-white text-xs md:text-sm'>
                         Sign Up
                     </button>
                 </div>
