@@ -48,7 +48,7 @@ const Footer: NextComponentType<NextPageContext, {}, Props> = (
                     return (
                         <div key={item.link} className='px-6 py-6'>
                             {innerLink(item, first)}
-                            {item.subLinks.map(item => {
+                            {item.subLinks && item.subLinks.map(item => {
                                 let first = false
                                 return (
                                     innerLink(item, first)

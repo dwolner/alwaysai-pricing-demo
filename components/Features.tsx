@@ -4,9 +4,9 @@ import Image from 'next/image'
 import type { NextComponentType, NextPageContext } from 'next'
 interface Feature {
     name: string
-    standard: string & boolean
-    premium: string & boolean
-    enterprise: string & boolean
+    standard: string | boolean
+    premium: string | boolean
+    enterprise: string | boolean
     backgroundColor?: string
     bottomBorder?: boolean
 }
