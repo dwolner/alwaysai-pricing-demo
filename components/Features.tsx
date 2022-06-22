@@ -3,11 +3,12 @@ import Image from 'next/image'
 
 import type { NextComponentType, NextPageContext } from 'next'
 interface Feature {
-    name: String
-    standard: String & Boolean
-    premium: String & Boolean
-    enterprise: String & Boolean
-    backgroundColor?: String
+    name: string
+    standard: string & boolean
+    premium: string & boolean
+    enterprise: string & boolean
+    backgroundColor?: string
+    bottomBorder?: boolean
 }
 interface Props {
     featureTableData: Feature[]
@@ -17,8 +18,8 @@ const Features: NextComponentType<NextPageContext, {}, Props> = (
     props: Props
 ) => {
     return (
-        <div className='w-full p-2 bg-white shadow'>
-            <div className='max-w-8xl mx-auto justify-between items-center'>
+        <div className='w-full p-2 bg-white shadow mb-2'>
+            <div className='max-w-8xl mx-auto justify-between items-center py-10'>
                 <div className='py-8 px-4 text-center'>
                     <h1 className='text-violet'>
                         Select your edition and build vision today
@@ -42,7 +43,9 @@ const Features: NextComponentType<NextPageContext, {}, Props> = (
                                 {props.featureTableData.map((row, index) => {
                                     return (
                                         <tr key={row.name} style={{
-                                            backgroundColor: row.backgroundColor ? row.backgroundColor : (index % 2 == 0 ? '#F5F3FCBF' : '#fff')
+                                            backgroundColor: row.backgroundColor ? row.backgroundColor : (index % 2 == 0 ? '#F5F3FCBF' : '#fff'),
+                                            borderRadius: '10px',
+                                            borderBottom: row.bottomBorder ? '2px #ccc solid' : ''
                                         }}>
                                             <td className='text-left p-3'>{row.name}</td>
                                             <td className='px-4 text-sm'>

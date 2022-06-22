@@ -4,9 +4,10 @@ import Image from 'next/image'
 
 import type { NextComponentType, NextPageContext } from 'next'
 interface Link {
-    text: String
-    link: String
-    icon?: String
+    text?: string
+    link?: string
+    icon?: string
+    backgroundColor?: string
     subLinks?: Link[]
 }
 interface Props {
@@ -27,7 +28,10 @@ const Nav: NextComponentType<NextPageContext, {}, Props> = (
                         return (
                             <div key={item.link} className='px-6 text-sm'>
                                 <Link href={item.link}>
-                                    {item.text}
+                                    <p className='hover:text-red cursor-pointer group flex items-center'>
+                                        {item.text}
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className="ml-4 h-5 w-5 transition-all opacity-0 group-hover:opacity-100"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
+                                    </p>
                                 </Link>
                             </div>
                         )

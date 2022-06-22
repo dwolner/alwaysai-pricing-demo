@@ -44,19 +44,28 @@ export const siteLinks = [
 
 export const socialLinks = [{
     icon: 'linkedin',
-    link: '/'
+    link: '/',
+    backgroundColor: 'rgb(0, 119, 181)'
 }, {
     icon: 'youtube',
-    link: '/'
+    link: '/',
+    backgroundColor: 'rgb(255, 0, 0)'
 }, {
     icon: 'twitter',
-    link: '/'
+    link: '/',
+    backgroundColor: 'rgb(29, 161, 242)'
 }, {
     icon: 'instagram',
-    link: '/'
+    link: '/',
+    backgroundColor: 'rgb(225, 48, 108)'
+}, {
+    icon: 'facebook',
+    link: '/',
+    backgroundColor: 'rgb(59, 89, 152)'
 }, {
     icon: 'discord',
-    link: '/'
+    link: '/',
+    backgroundColor: 'rgb(88, 101, 242)'
 }]
 
 export const featureTableData = [{
@@ -75,7 +84,8 @@ export const featureTableData = [{
     name: 'alwaysAI 75+ Starter Apps',
     standard: true,
     premium: true,
-    enterprise: true
+    enterprise: true,
+    bottomBorder: true
 },
 {
     name: 'Object Detection',
@@ -99,7 +109,8 @@ export const featureTableData = [{
     name: 'Classification',
     standard: true,
     premium: true,
-    enterprise: true
+    enterprise: true,
+    bottomBorder: true
 },
 {
     name: 'Model Catalog (100+ pre-trained Models)',
@@ -117,7 +128,8 @@ export const featureTableData = [{
     name: 'Desktop Installer & Application',
     standard: true,
     premium: true,
-    enterprise: true
+    enterprise: true,
+    bottomBorder: true
 },
 {
     name: 'Users',
@@ -138,7 +150,8 @@ export const featureTableData = [{
     standard: '100 GB',
     premium: '300 GB',
     enterprise: '1 TB+',
-    backgroundColor: '#2BD5BE2E'
+    backgroundColor: '#2BD5BE2E',
+    bottomBorder: true
 },
 {
     name: 'Annotation',
@@ -192,7 +205,8 @@ export const featureTableData = [{
     name: 'Hardware Planning/Expertise',
     standard: true,
     premium: true,
-    enterprise: true
+    enterprise: true,
+    bottomBorder: true
 },
 {
     name: 'Yearly Platform Subscription Fee',
@@ -213,36 +227,36 @@ export const pricingData = [
     {
         title: 'Standard',
         description: 'Ideal for small business startups',
-        tag: 'Best Value',
+        tag: 'BEST VALUE',
         features: [
-            '2 Full - Access Users',
+            '2 Full-Access Users',
             'alwaysAI CLI',
             '75+ Starter Apps',
-            '100+ Pre - Trained Models',
-            '2 Full - Access Users'
+            '100+ Pre-Trained Models',
+            '2 Full-Access Users'
         ]
     },
     {
         title: 'Premium',
         description: 'Ideal for businesses that want to take their computer vision apps to the next level',
-        tag: 'Most Popular',
+        tag: 'MOST POPULAR',
         features: [
-            '5 Full - Access Users',
+            '5 Full-Access Users',
             'alwaysAI CLI',
             '75 + Starter Apps',
-            '100 + Pre - Trained Models',
-            '5 Full - Access Users'
+            '100 + Pre-Trained Models',
+            '5 Full-Access Users'
         ]
     },
     {
         title: 'Enterprise',
         description: 'Ideal for enterprise customers who want to deploy computer vision applications at scale ',
-        tag: 'Most Features',
+        tag: 'MOST FEATURES',
         features: [
             'Unlimited Users',
             'alwaysAI CLI',
             '75 + Starter Apps',
-            '100 + Pre - Trained Models',
+            '100 + Pre-Trained Models',
             'Unlimited Users'
         ]
     }

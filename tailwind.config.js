@@ -8,11 +8,13 @@ module.exports = {
     extend: {
       colors: {
         "red": "#F2303A",
+        "lightpurple": "#edecf9",
         "purple": "#4924E2",
+        "darkpurple": "#4031B3",
         "violet": "#231D4F"
       },
       maxWidth: {
-        "2xs": "230px",
+        "2xs": "292px",
         "8xl": "1440px"
       }
     },
