@@ -43,7 +43,7 @@ const Tiers: NextComponentType<NextPageContext, {}, Props> = (
                                         <ul>
                                             {item.features.map(text => {
                                                 return (
-                                                    <li className='text-sm text-gray-500 flex py-1'>
+                                                    <li key={text} className='text-sm text-gray-500 flex py-1'>
                                                         <div className='bg-purple bg-opacity-5 w-5 px-1 mr-2 rounded-full'>
                                                             <Image src='/svg/checkmark_small.svg' layout='intrinsic' width={15} height={10} alt='checkmark' />
                                                         </div>
