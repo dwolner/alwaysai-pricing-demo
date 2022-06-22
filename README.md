@@ -44,6 +44,7 @@ yarn lint
 
 ### Hosted on Vercel
 Check out the deployed version on Vercel:
+[https://alwaysai-pricing-demo.vercel.app/](https://alwaysai-pricing-demo.vercel.app/)
 
 ## Data Modal Design
 

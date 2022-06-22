@@ -38,10 +38,10 @@ const Nav: NextComponentType<NextPageContext, {}, Props> = (
                     })}
                 </div>
                 <div className='flex xl:flex-1 justify-end'>
-                    <button className='bg-white md:px-4 p-2.5 mx-1 rounded-lg text-red border-2 border-red text-xs md:text-sm'>
+                    <button className='bg-white hover:bg-red/25 md:px-4 p-2.5 mx-1 rounded-lg text-red border-2 border-red text-xs md:text-sm'>
                         Schedule a Demo
                     </button>
-                    <button className='bg-red md:px-4 p-2.5 mx-1 rounded-lg text-white text-xs md:text-sm'>
+                    <button className='bg-red hover:bg-red/75 md:px-4 p-2.5 mx-1 rounded-lg text-white text-xs md:text-sm'>
                         Sign Up
                     </button>
                 </div>
